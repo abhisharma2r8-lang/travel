@@ -101,18 +101,24 @@ button:hover{
     transform:translateY(-3px);
 }
 
-@media(max-width:900px){
+@media (max-width:900px){
+
+.contact{
+    padding:70px 20px;
+    min-height:auto;
+}
 
 .contact-container{
     grid-template-columns:1fr;
+    gap:40px;
+}
+
+.contact-right{
+    padding:30px 20px;
 }
 
 .contact-left h1{
-    font-size:2.7rem;
-}
-
-.contact{
-    padding:80px 0;
+    font-size:2.5rem;
 }
 
 }
