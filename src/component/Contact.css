@@ -101,24 +101,84 @@ button:hover{
     transform:translateY(-3px);
 }
 
-@media (max-width:900px){
+@media(max-width:900px){
 
 .contact{
-    padding:70px 20px;
-    min-height:auto;
+    margin-top:0;
+    padding:50px 15px;
+    min-height:100vh;
 }
 
 .contact-container{
+    width:100%;
     grid-template-columns:1fr;
-    gap:40px;
+    gap:30px;
 }
 
-.contact-right{
-    padding:30px 20px;
+.contact-left{
+    text-align:left;
+}
+
+.subtitle{
+    font-size:13px;
+    letter-spacing:3px;
+    margin-bottom:12px;
 }
 
 .contact-left h1{
-    font-size:2.5rem;
+    font-size:2.2rem;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.contact-left p{
+    font-size:0.95rem;
+    line-height:1.7;
+    color:#eee;
+}
+
+.info{
+    margin-top:25px;
+    gap:15px;
+    font-size:0.95rem;
+}
+
+
+.contact-right{
+    padding:25px 18px;
+    border-radius:22px;
+    background:rgba(255,255,255,0.18);
+}
+
+
+input,
+textarea{
+    padding:15px;
+    border-radius:10px;
+    font-size:15px;
+}
+
+
+button{
+    padding:15px;
+    border-radius:10px;
+}
+
+}
+
+
+@media(max-width:480px){
+
+.contact-left h1{
+    font-size:1.9rem;
+}
+
+.contact-left p{
+    font-size:0.9rem;
+}
+
+.contact-container{
+    gap:25px;
 }
 
 }
